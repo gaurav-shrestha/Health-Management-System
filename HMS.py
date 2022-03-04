@@ -121,16 +121,17 @@ def retrive(v):
 
 
 print("\n\t\t\tHealth Management System\n\n")
-a=int(input("\nPress: 1 to Enter the data \t 2 to Retrieve the data \t 3 to Quit the program\n"))
-if (a==1):
-    b=int(input("\nPress: 1 for Gaurav \t 2 for Banshaj \t  3 for Badal \n"))
-    client(b)
+while(True):
+    a=int(input("\nPress: 1 to Enter the data \t 2 to Retrieve the data \t 3 to Quit the program\n"))
+    if (a==1):
+        b=int(input("\nPress: 1 for Gaurav \t 2 for Banshaj \t  3 for Badal \n"))
+        client(b)
 
-elif(a==2):
-    b=int(input("\nPress: 1 for Gaurav \t 2 for Banshaj \t  3 for Badal \n"))
-    retrive(b)
-elif(a==3):
-    print("Program terminated!!")
-    quit()
-else:
-    print("Enter the Valid Command.")
+    elif(a==2):
+        b=int(input("\nPress: 1 for Gaurav \t 2 for Banshaj \t  3 for Badal \n"))
+        retrive(b)
+    elif(a==3):
+        print("Program terminated!!")
+        quit()
+    else:
+        print("Enter the Valid Command.")
