@@ -73,6 +73,7 @@ def retrive(v):
             with open("gv_exrcse.txt") as f:
                 for contents in f:
                     print(contents)
+                # print(f.read())   #Equivalent to above two line
         elif(c==2):
             print("\n\t  FOOD LOG")
             with open("gv_food.txt") as f:
